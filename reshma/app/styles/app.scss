@@ -1,10 +1,14 @@
 
 @import "ember-cli-bootstrap-4/bootstrap";
 body {
-    background-color: rgba(141, 206, 184, 0.945);
-    color:blueviolet;
+    background-color: rgba(189, 219, 209, 0.945);
+    color:rgb(9, 105, 112);
     font-family: sans-serif;
+    
 }
 .table{
-    color:crimson
+    color:rgb(115, 16, 145)
+}
+h1 {
+font-weight: lighter;
 }

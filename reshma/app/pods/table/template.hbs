@@ -1,4 +1,4 @@
-<h1 class = "table"> TABLE </h1>
+<h2 class = "table"> TABLE </h2>
 
 
     {{!-- <tbody>
@@ -25,18 +25,18 @@
     </tr>
   </thead>
   <tbody>
-       {{#each employees as |emp|}}
+       {{#each employees as |person index|}}
      <tr>
      <th scope="row">{{emp.id}}</th>
-      <td>{{emp.firstName}}</td>
-      <td>{{emp.lastName}}</td>
-      <td>{{emp.age}}</td>
+      <td>{{person.firstName}}</td>
+      <td>{{person.lastName}}</td>
+      <td>{{person.age}}</td>
     </tr>
     {{/each}}
   </tbody>
-</table>
+ </table>
 
 {{!-- <button type="button" class="delete" onclick={{route-action 'delete'}}>Delete</button> --}}
 
-<button type="button" onclick= {{route-action 'add' }}>Add</button>
+<button type="button" class="btn btn-info" onclick= {{action 'add' }}>Add</button>
 {{outlet}}

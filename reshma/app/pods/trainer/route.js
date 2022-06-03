@@ -2,7 +2,7 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
 
-setupController(controller,model){
+setupController(controller){
     controller.set('firstName', 'Reshma')
     controller.set('lastName', 'Begum')
 
