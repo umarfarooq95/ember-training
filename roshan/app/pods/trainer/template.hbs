@@ -1,0 +1,26 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">FirstName</th>
+      <th scope="col">LastName</th>
+      <th scope="col">Age</th>
+    </tr>
+  </thead>
+  <tbody>
+       {{#each persons as |person index|}}
+     <tr>
+     <th scope="row">{{person.id}}</th>
+      <td>{{person.firstName}}</td>
+      <td>{{person.lastName}}</td>
+      <td>{{person.age}}</td>
+    </tr>
+    {{/each}}
+    
+  </tbody>
+</table>
+
+<button type="button" class="add" onclick={{action 'add'}}>add</button>
+<button type="button" class="delete" onclick={{action 'delete'}}>Delete</button>
+
+{{outlet}}

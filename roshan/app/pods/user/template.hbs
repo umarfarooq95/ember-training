@@ -1,0 +1,14 @@
+<h1>Hello</h1>
+<input type="text">
+
+
+{{#with App.obj}}
+    <ul>
+    {{#each things}}
+        <li>{{this}}</li>
+    {{/each}}
+    </ul>
+{{/with}}
+<button type="button" onclick={{action 'login'}}>Add</button>
+ 
+{{outlet}}
