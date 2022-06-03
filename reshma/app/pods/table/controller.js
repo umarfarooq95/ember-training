@@ -13,26 +13,5 @@ export default Controller.extend({
 
     ],
 
-    //const employee =[{name: 'umar', age: 55}, {name: 'vinoth', age: 10}]
-
-    // name: '',
-    // age: '',
-    // employees: [],
-    // actions: {
-    //     note() {
-    //         //console.log("umar");
-    //         const name = this.get('name');
-    //         const age = this.get('age');
-    //         const dynamic = this.get('employees');
-    //         console.log(name);
-    //         console.log(age);
-    //         const details = {
-    //             name,
-    //             age
-    //         }
-    //         dynamic.pushObject(details);
-    //         console.log(dynamic)
-    //         this.set('employees', dynamic);
-    //     },
-    // },
+   
     });
