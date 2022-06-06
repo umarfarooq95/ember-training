@@ -1,0 +1,30 @@
+{{outlet}}
+<h1>Employee List</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Age</th>
+            {{!-- <th>FirstName</th>
+            <th>LastName</th>
+            <th>Age</th> --}}
+        </tr>
+    </thead>
+    <tbody>
+        {{#each employees as |emp|}}
+        <tr>
+            <th scope="row">{{emp.id}}</th>
+            <td>{{emp.firstName}}</td>
+            <td>{{emp.lastName}}</td>
+            <td>{{emp.age}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<button type="button" onclick={{route-action "add"}}>Add</button>
+
+
+
